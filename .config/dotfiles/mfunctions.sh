@@ -158,3 +158,8 @@ function push() {
     git commit -m "($branch) $msg"
     git push origin $branch
 }
+
+lt ()
+{
+    du -sh * | sort -rh | head -n $1
+}
