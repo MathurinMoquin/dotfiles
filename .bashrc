@@ -23,3 +23,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [ -f "/home/math/.ghcup/env" ] && . "/home/math/.ghcup/env" # ghcup-env
 
 alias docker='sudo docker'
+
+export GUARDIAN_SECRET_KEY=_qFGLqNFaberiUQmJyw60EEK5mqaizbu_9ji1Vb0CghGmbKoh8fN3HUIIrA7NYLv
