@@ -42,6 +42,7 @@ files=(
     ".config/systemd/check-battery.service"
     )
 
+echo "QUOI"
 for file in "${files[@]}"; do
     if [ -e "$file" ]; then
         dest="$DF/$file"
