@@ -42,15 +42,11 @@ files=(
     ".config/systemd/check-battery.service"
     )
 
-echo "QUOI"
 for file in "${files[@]}"; do
     HF="$HOME/$file"
     if [ -e "$HF" ]; then
         dest="$DF/$file"
         mkdir -p "$(dirname "$dest")"
-
-        echo "$dest"
-
         cp -r "$HF" "$dest"
     fi
 done
