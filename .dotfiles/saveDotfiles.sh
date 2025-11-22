@@ -43,6 +43,7 @@ files=(
     "$HOME/.config/qt6ct"
     "$HOME/.config/systemd/change-wallpaper.service"
     "$HOME/.config/systemd/check-battery.service"
+    "$HOME/plsgit/updatemaster.txt"
     )
 
 for file in "${files[@]}"; do
@@ -53,6 +54,6 @@ done
 
 if ! dotfiles diff --cached --quiet; then
     dotfiles checkout -b "$GITHUB_BRANCH"
-    dotfiles commit -m "Config update"
+    dotfiles commit -m "update"
     dotfiles push "$GITHUB_REMOTE" "$GITHUB_BRANCH" || echo "Push failed"
 fi
