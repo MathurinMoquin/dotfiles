@@ -47,6 +47,8 @@ for file in "${files[@]}"; do
         dest="$DF/$file"
         mkdir -p "$(dirname "$dest")"
 
+        echo "$dest"
+
         cp -r "$file" "$dest"
     fi
 done
