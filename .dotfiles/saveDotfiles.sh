@@ -3,7 +3,7 @@
 DF="$HOME/.dotfiles"
 GITHUB_LINK="git@github.com:MathurinMoquin/dotfiles.git"
 GITHUB_REMOTE="origin"
-GITHUB_BRANCH="updateScript"
+GITHUB_BRANCH="updateScript2"
 
 mkdir -p "$DF"
 
