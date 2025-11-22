@@ -52,6 +52,7 @@ for file in "${files[@]}"; do
 done
 
 if ! dotfiles diff --cached --quiet; then
+    dotfiles checkout -b "$GITHUB_BRANCH"
     dotfiles commit -m "Config update"
     dotfiles push "$GITHUB_REMOTE" "$GITHUB_BRANCH" || echo "Push failed"
 fi
