@@ -51,6 +51,12 @@ for file in "${files[@]}"; do
     fi
 done
 
+commit="Update config"
+
+if [ "$#" -eq 0 ]; then
+    $commit="$1"
+fi
+
 /usr/bin/git add .
-/usr/bin/git commit -m "Update config"
+/usr/bin/git commit -m "$commit"
 /usr/bin/git push "$GITHUB_REMOTE" "$GITHUB_BRANCH"

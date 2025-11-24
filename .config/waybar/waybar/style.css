@@ -1,0 +1,170 @@
+* {
+	font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
+	font-weight: bold;
+	font-size: 16px;
+	color: #dcdfe1;
+}
+
+#waybar {
+	min-width: 40px;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	box-shadow: none;
+}
+
+#workspaces,
+#window,
+#tray {
+	background-color: rgba(15, 27, 53, 0.9);
+	padding: 0px 0px;
+	margin-top: 6px;
+	margin-left: 6px;
+	margin-right: 2px;
+	border-radius: 10px;
+	border-width: 0px;
+}
+
+#tray {
+    padding: 5px 0px;
+    margin-left: 3;
+}
+
+#workspaces {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+#clock,
+#custom-power {
+	margin-bottom: 6px;
+	border-radius: 0 0 10px 10px;
+}
+
+#network,
+#custom-lock {
+	margin-top: 6px;
+	border-radius: 10px 10px 0 0;
+}
+
+#custom-lock,
+#custom-power,
+#custom-reboot,
+#network,
+#bluetooth,
+#battery,
+#pulseaudio,
+#backlight,
+#temperature,
+#memory,
+#cpu,
+#clock {
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 4px 0px;
+	background-color: rgba(15, 27, 53, 0.9);
+	border-width: 0px;
+}
+
+#custom-power,
+#custom-reboot,
+#custom-lock {
+	padding: 2px;
+	padding-left: 0px;
+}
+
+#custom-lock {
+	padding-top: 6px;
+}
+
+
+#custom-power {
+	padding-bottom: 6px;
+}
+
+#network {
+	
+}
+
+#bluetooth {
+	
+}
+
+#battery {
+	
+}
+
+#pulseaudio{
+	
+}
+
+#backlight {
+	
+}
+
+#temperature {
+	
+}
+
+#memory {
+	
+}
+
+#cpu {
+	
+}
+
+#clock {
+	
+}
+
+#temperature.critical,
+#pulseaudio.muted {
+	color: #FF0000;
+	padding-top: 0;
+}
+
+#bluetooth:hover,
+#network:hover,
+#backlight:hover,
+#battery:hover,
+#pulseaudio:hover,
+#temperature:hover,
+#memory:hover,
+#cpu:hover,
+#clock:hover,
+#custom-lock:hover,
+#custom-reboot:hover,
+#custom-power:hover,
+#window:hover {
+	background-color: rgba(70, 75, 90, 0.9);
+}
+
+#workspaces button:hover {
+	background-color: rgba(97, 175, 239, 0.2);
+	padding: 2px 8px;
+	margin: 0 2px;
+	border-radius: 10px;
+}
+
+#workspaces button.active {
+	background-color: #61afef;
+	color: #ffffff;
+	padding: 2px 8px;
+	margin: 0 2px;
+	border-radius: 10px;
+}
+
+#workspaces button {
+	background-color: transparent;
+	border: none;
+	color: #888888;
+	padding: 2px 8px;
+	margin: 0 2px;
+	font-weight: bold;
+}
+
+#window {
+	font-weight: 500;
+	font-style: italic;
+}

@@ -23,3 +23,5 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [ -f "/home/math/.ghcup/env" ] && . "/home/math/.ghcup/env" # ghcup-env
 
 alias docker='sudo docker'
+
+alias tb="docker run --rm -ti fathyb/carbonyl https://youtube.com"
