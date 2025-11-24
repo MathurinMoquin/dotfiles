@@ -53,7 +53,7 @@ done
 
 commit="Update config"
 
-if [ "$#" -eq 0 ]; then
+if [ $# -ne 0 ]; then
     $commit="$1"
 fi
 
