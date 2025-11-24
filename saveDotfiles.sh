@@ -55,8 +55,6 @@ if [ $# -ne 0 ]; then
     commit="$1"
 fi
 
-echo "$commit"
-
 /usr/bin/git add .
 /usr/bin/git commit -m "$commit"
 /usr/bin/git push "$GITHUB_REMOTE" "$GITHUB_BRANCH"
