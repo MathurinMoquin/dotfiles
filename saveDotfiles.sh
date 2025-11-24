@@ -25,8 +25,6 @@ files=(
     ".tmux.conf"
     ".vimrc"
     ".zshrc"
-    ".dotfiles/install.sh"
-    ".dotfiles/saveDotfiles.sh"
     ".config/dotfiles"
     ".config/hypr"
     ".config/kitty"
@@ -54,8 +52,10 @@ done
 commit="Update config"
 
 if [ $# -ne 0 ]; then
-    $commit="$1"
+    commit="$1"
 fi
+
+echo "$commit"
 
 /usr/bin/git add .
 /usr/bin/git commit -m "$commit"
